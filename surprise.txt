@@ -1,0 +1,17 @@
+Name: SuryaNeil Ahuja
+Student ID: 3037675981
+
+1. What are 3-5 (or more) commands that you can use on terminal and what do they do? What language is your computer terminal in?
+My computer's terminal is natively in Windows PowerShell but we've been using bash through git, which we installed. Some other commands I can use are mkdir to create a new directory, rm to remove a file, cd to change directory, ls to list the directories/files inside your current directory, and a few others.
+
+2. Do you have pets? What kind?
+No, my mom is allergic to anything with fur pretty much, plus other logistics made having a pet hard, but if I had a choice I would get a dog, probably a big one like a german shepard or something.
+
+3. If you run across an error, what would your first course of action be?
+Google it. See what different solutions are, and try them out.
+
+4. Funniest thing that happened to you in high school.
+Once we had to evacuate the entire school because a new chemistry teacher was demonstrating an experiment...sodium in water, which reacted rather violently and set the fire alarms off. The teacher was careful and it was totally safe but still managed to set off the alarm. That teacher did not return the following year (even though he was awesome).
+
+5. What is a python script? (Keep it simple)
+It is a set of instructions in a specific language that tells a computer to do a thing and how to do it.
