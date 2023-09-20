@@ -32,8 +32,15 @@ Print i 10 times using both a for and while loop.
 """
 
 # use a for loop here:
+"""for i in range(10):
+    print("i")"""
 
 # use a while loop:
+"""i = 0
+print("")
+while i < 10:
+    print("i")
+    i += 1"""
 
 """###Problem 2: Range()
 Range is a cool function but there are a lot of parts to it so let's disect it!
@@ -41,6 +48,9 @@ Range is a cool function but there are a lot of parts to it so let's disect it!
 What happens if the range is from (5, 5)?  How about from (10, 6)?  Try different step sizes: (10, 6, -1), (1, 10, 2). Write down all your observations and answer the following questions.
 
 """
+"""print()
+for i in range(5,6):
+    print(i)"""
 
 # What does first number in range mean?
 # What does the second argument in range mean? Is it included or excluded?
@@ -51,5 +61,8 @@ How do you loop through elements in a list using a for loop?
 """
 
 given_list = [10, 20, 30, 40, 50]
+
+for i in given_list:
+    print(i)
 
 """# Great work! Spend the rest of class doing application problems will be in your HW."""

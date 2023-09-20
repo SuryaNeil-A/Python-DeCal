@@ -17,14 +17,29 @@ else:
 """for i in range(25,-1,-3):
     print(i)"""
 
+import math
+
 i = 25
 while i >= 0:
     print(i)
     i -= 1
 
 def power(input, power):
-    input = int(input("enter input:"))
-    power = int(input("enter power:"))
-    for i in range(0,power + 1):
+    output = input*input
+    for i in range(2,power):
         output *= input
-    print(output)
+    output
+
+def findMin(x,y):
+    if x < y:
+        return x
+    elif x > y:
+        return y
+    else:
+        return print(str(x) + " is equal to " + str(y))
+    
+def quadraticFormula(a,b,c):
+    rootPlus = (-b+math.sqrt(b**2-4*a*c))/(2*a)
+    rootMinus = (-b-math.sqrt(b**2-4*a*c))/(2*a)
+    return rootPlus, rootMinus
+    
