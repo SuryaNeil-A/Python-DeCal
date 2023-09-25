@@ -1,4 +1,4 @@
-#If Statements
+#If Statements 9/18/23
 
 """value = int(input("Enter a number:"))
 
@@ -9,7 +9,7 @@ elif value > 10:
 else:
     print(value, "is less than than 10.")"""
 
-#For Loops
+#For Loops 9/18/23
 
 """for i in range(0,26):
     print(i)"""
@@ -17,7 +17,7 @@ else:
 """for i in range(25,-1,-3):
     print(i)"""
 
-import math
+"""import math
 
 i = 25
 while i >= 0:
@@ -41,5 +41,6 @@ def findMin(x,y):
 def quadraticFormula(a,b,c):
     rootPlus = (-b+math.sqrt(b**2-4*a*c))/(2*a)
     rootMinus = (-b-math.sqrt(b**2-4*a*c))/(2*a)
-    return rootPlus, rootMinus
-    
+    return rootPlus, rootMinus"""
+
+#Lists 9/25/23
