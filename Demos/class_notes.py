@@ -1,3 +1,6 @@
+
+import numpy as np
+
 #If Statements 9/18/23
 
 """value = int(input("Enter a number:"))
@@ -44,3 +47,18 @@ def quadraticFormula(a,b,c):
     return rootPlus, rootMinus"""
 
 #Lists 9/25/23
+
+#Numpy Arrays 10/4/23
+
+array_1 = np.array([1,2,3])
+array_2 = np.array([2,4,6])
+
+sum = 0
+for i in range(1,101):
+    sum += i
+print(sum)
+
+sum2 = np.sum(np.arange(1,101))
+print(sum2)
+
+arr = np.array([[1,2,3],[4,5,6],[7,8,9]])
