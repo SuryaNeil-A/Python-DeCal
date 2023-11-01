@@ -29,8 +29,12 @@ def reverseArray(arr):
     >>> reverseArray(np.reshape(wrongDim, (2, 2)))
     Array length or dimension is not supported. Please try again.'
     """
-    "YOUR CODE HERE"
-
+    if type(int(len(arr)**(1/2))) == int:
+        reshapedArray = np.reshape(arr,(int(len(arr)**(1/2)),int(len(arr)**(1/2))))
+        return reshapedArray[::-1,::-1]
+        #return np.fliplr(np.flipud(reshapedArray))
+    else:
+        return "Array length or dimension is not supported. Please try again."
 
 
 # PROBLEM 2: IT'S NICE TO BE DIFFERENT
@@ -48,8 +52,7 @@ def uniqueCounts(myArr):
     >>> uniqueCounts(arr)
     (array([ 2, 5,  8,  9, 10]), array([2, 1, 2, 1, 2]))
     """
-    "YOUR CODE HERE"
-
+    return np.unique(myArr,return_counts=True)
 
 
 # PROBLEM 3: NO FAKES HERE
@@ -75,7 +78,13 @@ def condtionedArr(myArr):
            [37, 39, 29],
            [18, 49, 28]])
     """
-    "YOUR CODE HERE"
+    columnMean = np.mean(myArr, axis = 1)
+    conditionedArray = myArr.reshape(myArr.size)
+    for i in range(len(conditionedArray)):
+        if conditionedArray[i] < columnMean[]:
+            conditionedArray[i] = columnMean[]
+    conditionedArray.reshape(myArr.shape)
+    return conditionedArray
 
 
 

@@ -1,5 +1,6 @@
 
 import numpy as np
+import matplotlib.pyplot as plt
 
 #If Statements 9/18/23
 
@@ -50,7 +51,7 @@ def quadraticFormula(a,b,c):
 
 #Numpy Arrays 10/4/23
 
-array_1 = np.array([1,2,3])
+"""array_1 = np.array([1,2,3])
 array_2 = np.array([2,4,6])
 
 sum = 0
@@ -61,4 +62,52 @@ print(sum)
 sum2 = np.sum(np.arange(1,101))
 print(sum2)
 
-arr = np.array([[1,2,3],[4,5,6],[7,8,9]])
+arr = np.array([[1,2,3],[4,5,6],[7,8,9]])"""
+
+#Plotting 10/16/23
+
+"""x = np.linspace(0,2*np.pi, 100)
+y = np.sin(x)
+
+plt.figure()
+plt.scatter(x,y, marker='*',color='green')
+
+plt.title('Graph of sin(x)')
+plt.xlabel('x values')
+plt.ylabel('y values')
+
+plt.show()"""
+
+#another one
+
+"""x = np.linspace(0, 2*np.pi)
+y = x**2
+
+plt.figure(figsize=(12,8))
+
+plt.plot(x,y,color='m',linewidth=2,marker='h')
+
+plt.title("Graph of y = x^2")
+plt.xlabel("x-values")
+plt.ylabel("y values")
+
+plt.show()"""
+
+#now subplots
+
+"""inputs = np.linspace(-2*np.pi,2*np.pi,1000)
+f = np.cos(inputs)
+g = np.tan(inputs)
+h = inputs**3
+j = np.abs(inputs)
+
+fig, axs = plt.subplots(2,2)
+
+plt.suptitle("functions wow")
+axs[0, 0].plot(inputs,f)
+axs[0,1].plot(inputs,g)
+axs[1,0].plot(inputs,h)
+axs[1,1].plot(inputs,j)
+
+plt.show()"""
+
