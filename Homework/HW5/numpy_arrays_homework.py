@@ -25,7 +25,15 @@ def findEqual(arr):
     array([[1, 1, 1],
            [2, 2, 2]])
     """
-    "YOUR CODE HERE"
+    testarr = arr[:,0] #taking first column
+    testarr = np.reshape(testarr, (arr.shape[0], 1)) #reshaping it to correct shape
+
+    results = np.all(arr == testarr, axis = 1) #makes a single row array of whether each row is true if all the values are the same
+
+    return arr[results, :] #returns the rows for which it is true
+
+
+
 
 
 # PROBLEM 2: CHECKERS
@@ -47,7 +55,10 @@ def checkerboard():
            [1, 0, 1, 0, 1, 0, 1, 0],
            [0, 1, 0, 1, 0, 1, 0, 1]])
     """
-    "YOUR CODE HERE"
+    checkerboard = np.zeros((8,8),int)
+    checkerboard[::2,::2] = 1
+    checkerboard[1::2,1::2] = 1
+    return checkerboard
 
 
 # PROBLEM 3: I NEED SOME SPACE
@@ -63,7 +74,7 @@ def spaceBetween(stringArr):
     >>> spaceBetween(myarr)
     array(['p y t h o n', 'i s', 'c o o l !'], dtype='<U11')
     """
-    "YOUR CODE HERE"
+    return np.char.join(" ", stringArr)
 
 
 # PROBLEM 4: EVERYTHING IS IN ORDER
@@ -89,4 +100,4 @@ def sorting(bigMatrix):
            [35, 38, 30, 18, 19],
            [42, 42, 35, 30, 37]])
     """
-    "YOUR CODE HERE"
+    return np.sort(bigMatrix, axis = 0)
